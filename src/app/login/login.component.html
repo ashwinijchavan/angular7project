@@ -1,0 +1,15 @@
+<div class="container">
+            <!-- <h1 class="text-center login-title">Sign in to continue to Bootsnipp</h1> -->
+            <div class="account-wall">
+                <img class="profile-img"
+                    src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                    alt="">
+                <form [formGroup]="loginForm" class="form-signin">
+                    <input type="text" class="form-control" formControlName="uname" placeholder="Email" required autofocus>
+                    <input type="password" class="form-control" formControlName="upass" placeholder="Password" required>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="login()">
+                        Log in</button>
+
+                </form>
+    </div>
+</div>
